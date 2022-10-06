@@ -11,14 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header class="page-header">
    <div class="container header-container">
       <nav class="page-nav">
-            <a href="" class="logo link">Web<span style="color:black"> Studio</span></a>
+            <a href="./index.html" class="logo link">Web<span style="color:black"> Studio</span></a>
             <ul class="logo-list list">
-              <li class="logo-link"><a href="" class="logo-item current">Studio</a></li>
+              <li class="logo-link"><a href="./index.html" class="logo-item current">Studio</a></li>
               <li class="logo-link"><a href="./portfolio.html" class="logo-item ">Portfolio</a></li>
               <li class="logo-link"><a href="" class="logo-item">Contacts</a></li>
             </ul>
@@ -29,22 +30,24 @@
       <svg class="header-connect-icon" width="16px" height="12px">
       <use href="./images4/symbol-defs.svg#icon-envelope"></use>
     </svg>info@devstudio.com</a>
-  </li>
+
     
     <a class="header-tel link"  href="tel:+380961111111"> 
       <svg class="header-connect-icon" width="10" height="16px">
       <use href="./images4/symbol-defs.svg#icon-Vector"></use>
     </svg>+380961111111</a>
-  </li>
+
       </div>
    </div>
     </header>
     <main>
-      <section class="hero overlay">
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-title"> EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button type="button" class="hero-button">Request our service</button>
+          <button type="button" class="hero-button" data-modal-open>Request our service</button>
+        </div>
       </section>
-     
+   
       <section class="hero-section">
         <div class="container">
           <h2 class="visually-hidden">What we proud of</h2>
@@ -78,15 +81,34 @@
               </p>
             </li>
           </ul>
+       
         </div>
+      
       </section>
+   
       <section class="images">
         <div class="container">
           <h2 class="images-title">What we do</h2>
           <ul class="images-list list">
-            <li class="image-link"><img src="./images/computer.jpg" alt="person working on computer" width="370" height="294"></li>
-            <li class="image-link"><img src="./images/ipad.jpg" alt="person working on ipad" width="370" height="294"></li>
-            <li class="image-link"><img src="./images/phone.jpg" alt="person sync phone with computer" width="370" height="294"></li>
+              <li class="image-link">
+                <a class="section-link" href="">
+                  <img src="./images/computer.jpg" alt="person working on computer" width="370" height="294">
+              <p class="image-text">DESKTOP APPS</p> 
+            </a>
+            </li>
+            <li class="image-link">
+              <a class="section-link" href="">
+                <img src="./images/ipad.jpg" alt="person working on ipad" width="370" height="294">
+              <p class="image-text">Mobile APPS</p>
+              </a>
+             </li>
+                  <li class="image-link">
+                    <a class="section-link" href="">
+                    <img src="./images/phone.jpg" alt="person sync phone with computer" width="370" height="294">
+                    <p class="image-text">DESIGN SOLUTIONS</p> 
+                    </a>
+                  </li>
+           
           </ul>
         </div>
         </section>
@@ -304,5 +326,15 @@
      </div>
      </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+        <svg class="modal-icon" width="18px" height="18px" >
+          <use href="./images4/symbol-defs.svg#icon-close-sign"></use>
+        </svg>
+      </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
