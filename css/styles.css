@@ -366,13 +366,15 @@ body {
 
 .section-link{
   position: relative;
+  display: block;
+  line-height: 0;
 }
 
 .image-text{
   position: absolute;
   height: 70px;
   width:100%;
-  left: 0;
+  right: 0;
   bottom: 0;
   font-weight: 700;
   font-size: 14px;
